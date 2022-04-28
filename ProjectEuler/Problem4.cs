@@ -22,7 +22,8 @@ namespace ProjectEuler
              * For this problem, my first instinct is to start at i = 999 and j = 999, multiply, check, and then decrement j. 
              * Once a palindrome is hit, set j back to i - , decrement i, and repeat those steps... something like that.
              * 
-             * After some reconsideration, here is what I came up with:
+             * That is pretty much what worked. Only thing I added to my initial thought was checking for when the value cannot be a larger
+             * number, in which case the algorithm just stops checking, as it is unecessary.
              * 
              */
 
