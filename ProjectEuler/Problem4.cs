@@ -26,9 +26,48 @@ namespace ProjectEuler
              * 
              */
 
+            int product;
+            int largest = 0;
 
+            for(int i = 999; i >= 1; i--)
+            {
+                //if it is impossible to get a higher palindrome, stop
+                if (i * 999 <= largest) break;
 
-            return "";
+                for(int j = 999; j >= 1; j--)
+                {
+                    product = i * j;
+
+                    //if not even high enough, stop. Values will only get lower
+                    if(product < largest) break;
+
+                    //check if palindrome. If it is, set it and be done
+                    if(IsPalindrome(product))
+                    {
+                        largest = product;
+                        break;
+                    }
+                }
+            }
+
+            return largest.ToString();
+        }
+
+        private bool IsPalindrome(int number)
+        {
+            //convert to string to check for a palindrome
+            string n = number.ToString();
+
+            //start at the ends and move inwards
+            for (int i = 0; i < n.Length / 2; i++)
+            {
+                if(n[i] != n[n.Length - 1 - i])
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }
