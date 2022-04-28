@@ -8,10 +8,7 @@ namespace ProjectEuler
 {
     internal class Problem1 : Problem
     {
-        protected override uint GetProblemNumber()
-        {
-            return 1;
-        }
+        protected override uint Number => 1;
 
         protected override string GetPrompt()
         {
@@ -19,7 +16,7 @@ namespace ProjectEuler
                 "Find the sum of all the multiples of 3 or 5 below 1000.";
         }
 
-        protected override void Solve()
+        protected override string Solve()
         {
             /*
              * In this problem, the best option will be to use 1 thread to solve each side of the problem.
@@ -58,7 +55,7 @@ namespace ProjectEuler
             //now add together and print
             int result = threes + fives;
 
-            PrintResult(result.ToString());
+            return result.ToString();
         }
     }
 }

@@ -8,10 +8,7 @@ namespace ProjectEuler
 {
     internal class Problem3 : Problem
     {
-        protected override uint GetProblemNumber()
-        {
-            return 3;
-        }
+        protected override uint Number => 3;
 
         protected override string GetPrompt()
         {
@@ -19,7 +16,7 @@ namespace ProjectEuler
                 "What is the largest prime factor of the number 600851475143?";
         }
 
-        protected override void Solve()
+        protected override string Solve()
         {
             /*
              * This takes wayyyy too long to brute force. But there's not much of an option here.
@@ -71,7 +68,7 @@ namespace ProjectEuler
                 }
             }
 
-            PrintResult(largestPrime);
+            return largestPrime.ToString();
         }
 
         //checks if the given value is a prime number.

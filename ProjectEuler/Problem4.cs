@@ -8,10 +8,7 @@ namespace ProjectEuler
 {
     internal class Problem4 : Problem
     {
-        protected override uint GetProblemNumber()
-        {
-            return 4;
-        }
+        protected override uint Number => 4;
 
         protected override string GetPrompt()
         {
@@ -19,9 +16,19 @@ namespace ProjectEuler
                 "Find the largest palindrome made from the product of two 3 - digit numbers.";
         }
 
-        protected override void Solve()
+        protected override string Solve()
         {
-            
+            /*
+             * For this problem, my first instinct is to start at i = 999 and j = 999, multiply, check, and then decrement j. 
+             * Once a palindrome is hit, set j back to i - , decrement i, and repeat those steps... something like that.
+             * 
+             * After some reconsideration, here is what I came up with:
+             * 
+             */
+
+
+
+            return "";
         }
     }
 }

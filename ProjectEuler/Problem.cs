@@ -16,11 +16,11 @@ namespace ProjectEuler
         /// Gets the number of this problem.
         /// </summary>
         /// <returns></returns>
-        protected abstract uint GetProblemNumber();
+        protected abstract uint Number { get; }
 
         private string GetProblemTitle()
         {
-            return $"Problem {GetProblemNumber()}";
+            return $"Problem {Number}";
         }
 
         /// <summary>
@@ -32,13 +32,14 @@ namespace ProjectEuler
         /// <summary>
         /// Does the calculations to solve the problem, and then writes them to the screen.
         /// </summary>
-        protected abstract void Solve();
+        /// <returns>A string representing the solution to the problem.</returns>
+        protected abstract string Solve();
 
         /// <summary>
         /// Prints the result to the screen, nicely.
         /// </summary>
         /// <param name="result"></param>
-        protected void PrintResult(string result)
+        private void PrintResult(string result)
         {
             Console.WriteLine($"Result: {result}");
         }
@@ -59,11 +60,15 @@ namespace ProjectEuler
 
             Console.WriteLine($"{GetPrompt()}\n");
 
+            string result;
+
             Stopwatch watch = Stopwatch.StartNew();
 
-            Solve();
+            result = Solve();
 
             watch.Stop();
+
+            PrintResult(result);
 
             long completionMilliseconds = watch.ElapsedMilliseconds;
             long completionSeconds = completionMilliseconds / 1000;

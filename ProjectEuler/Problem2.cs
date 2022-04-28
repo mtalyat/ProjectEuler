@@ -8,10 +8,7 @@ namespace ProjectEuler
 {
     internal class Problem2 : Problem
     {
-        protected override uint GetProblemNumber()
-        {
-            return 2;
-        }
+        protected override uint Number => 2;
 
         protected override string GetPrompt()
         {
@@ -20,7 +17,7 @@ namespace ProjectEuler
                 "By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.";
         }
 
-        protected override void Solve()
+        protected override string Solve()
         {
             const int count = 4000000;
 
@@ -47,7 +44,7 @@ namespace ProjectEuler
                 }
             }
 
-            PrintResult(sum);
+            return sum.ToString();
         }
     }
 }
