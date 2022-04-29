@@ -29,28 +29,19 @@ namespace ProjectEuler
             int threes = 0;
             int fives = 0;
 
-            Task threeTask = Task.Run(() =>
+            for (int i = 0; i < count; i += 3)
             {
-                for (int i = 0; i < count; i += 3)
+                //only don't add if the 5 will catch it, since it is specifically 3 OR 5, not 3 AND 5
+                if (i % 5 != 0)
                 {
-                    //only don't add if the 5 will catch it, since it is specifically 3 OR 5, not 3 AND 5
-                    if (i % 5 != 0)
-                    {
-                        threes += i;
-                    }
+                    threes += i;
                 }
-            });
+            }
 
-            Task fiveTask = Task.Run(() =>
+            for (int i = 0; i < count; i += 5)
             {
-                for (int i = 0; i < count; i += 5)
-                {
-                    fives += i;
-                }
-            });
-
-            //now wait for threads to finish their work
-            Task.WaitAll(threeTask, fiveTask);
+                fives += i;
+            }
 
             //now add together and print
             int result = threes + fives;
