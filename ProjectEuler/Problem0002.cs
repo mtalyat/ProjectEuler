@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    internal class Problem2 : Problem
+    internal class Problem0002 : Problem
     {
         protected override uint Number => 2;
 
