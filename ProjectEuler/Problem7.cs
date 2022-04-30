@@ -49,20 +49,5 @@ namespace ProjectEuler
 
             return primes[count - 1].ToString();
         }
-
-        private bool IsPrime(int number, List<int> primes)
-        {
-            //if the number is divisible by one of the primes, stop
-            foreach(int prime in primes)
-            {
-                if(number % prime == 0)
-                {
-                    //not prime, it is evenly divisible
-                    return false;
-                }
-            }
-
-            return true;
-        }
     }
 }
