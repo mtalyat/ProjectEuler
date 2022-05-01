@@ -34,7 +34,7 @@ namespace ProjectEuler
             for (int i = 3; i < count; i += 2)
             {
                 //if the number is prime, add it
-                if (IsPrime(i, primes))
+                if (Helper.IsPrime(i, primes))
                 {
                     primes.Add(i);
                     sum += i;
