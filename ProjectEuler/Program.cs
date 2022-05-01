@@ -6,7 +6,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Problem problem = new Problem0013();
+        Problem problem = new Problem0014();
 
         problem.DoWork();
     }
