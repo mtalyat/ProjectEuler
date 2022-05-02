@@ -68,7 +68,7 @@ namespace ProjectEuler
 
             if(completionSeconds > 0)
             {
-                Console.WriteLine($"{GetProblemTitle()} completed in {completionSeconds} seconds.");
+                Console.WriteLine($"{GetProblemTitle()} completed in {completionSeconds}.{completionMilliseconds % 1000} seconds.");
             } else
             {
                 Console.WriteLine($"{GetProblemTitle()} completed in {completionMilliseconds} milliseconds.");
