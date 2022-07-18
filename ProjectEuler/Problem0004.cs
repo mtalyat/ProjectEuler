@@ -8,8 +8,6 @@ namespace ProjectEuler
 {
     internal class Problem0004 : Problem
     {
-        protected override uint Number => 4;
-
         protected override string GetPrompt()
         {
             return "A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.\n\n" +

@@ -8,8 +8,6 @@ namespace ProjectEuler
 {
     internal class Problem0005 : Problem
     {
-        protected override uint Number => 5;
-
         protected override string GetPrompt()
         {
             return "2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.\n\n" +

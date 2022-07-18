@@ -8,8 +8,6 @@ namespace ProjectEuler
 {
     internal class Problem0008 : Problem
     {
-        protected override uint Number => 8;
-
         protected override string GetPrompt()
         {
             return "The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.\n\n" +

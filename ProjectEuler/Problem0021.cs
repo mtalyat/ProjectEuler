@@ -8,8 +8,6 @@ namespace ProjectEuler
 {
     internal class Problem0021 : Problem
     {
-        protected override uint Number => 21;
-
         protected override string GetPrompt()
         {
             return @"Let d(n) be defined as the sum of proper divisors of n (numbers less than n which divide evenly into n).

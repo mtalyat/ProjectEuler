@@ -8,8 +8,6 @@ namespace ProjectEuler
 {
     internal class Problem0011 : Problem
     {
-        protected override uint Number => 11;
-
         protected override string GetPrompt()
         {
             return @"In the 20×20 grid below, four numbers along a diagonal line have been marked in red.

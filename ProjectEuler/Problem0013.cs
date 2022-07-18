@@ -9,8 +9,6 @@ namespace ProjectEuler
 {
     internal class Problem0013 : Problem
     {
-        protected override uint Number => 13;
-
         protected override string GetPrompt()
         {
             return @"Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.

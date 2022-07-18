@@ -8,8 +8,6 @@ namespace ProjectEuler
 {
     internal class Problem0019 : Problem
     {
-        protected override uint Number => 19;
-
         protected override string GetPrompt()
         {
             return @"You are given the following information, but you may prefer to do some research for yourself.

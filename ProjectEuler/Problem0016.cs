@@ -9,8 +9,6 @@ namespace ProjectEuler
 {
     internal class Problem0016 : Problem
     {
-        protected override uint Number => 16;
-
         protected override string GetPrompt()
         {
             return @"2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.

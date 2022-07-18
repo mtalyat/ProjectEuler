@@ -8,8 +8,6 @@ namespace ProjectEuler
 {
     internal class Problem0014 : Problem
     {
-        protected override uint Number => 14;
-
         protected override string GetPrompt()
         {
             return @"The following iterative sequence is defined for the set of positive integers:

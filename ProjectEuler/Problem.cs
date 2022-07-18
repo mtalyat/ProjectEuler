@@ -12,15 +12,27 @@ namespace ProjectEuler
     /// </summary>
     internal abstract class Problem
     {
-        /// <summary>
-        /// Gets the number of this problem.
-        /// </summary>
-        /// <returns></returns>
-        protected abstract uint Number { get; }
+        private uint GetProblemNumber()
+        {
+            //get the class name
+            string name = GetType().Name;
+
+            //number is last 4 characters
+            string number = name.Substring(name.Length - 4, 4);
+
+            uint i;
+            if(uint.TryParse(number, out i))
+            {
+                return i;
+            }
+
+            //invalid
+            return 0;
+        }
 
         private string GetProblemTitle()
         {
-            return $"Problem {Number}";
+            return $"Problem {GetProblemNumber()}";
         }
 
         /// <summary>

@@ -9,8 +9,6 @@ namespace ProjectEuler
 {
     internal class Problem0020 : Problem
     {
-        protected override uint Number => 20;
-
         protected override string GetPrompt()
         {
             return @"n! means n × (n − 1) × ... × 3 × 2 × 1

@@ -8,8 +8,6 @@ namespace ProjectEuler
 {
     internal class Problem0009 : Problem
     {
-        protected override uint Number => 9;
-
         protected override string GetPrompt()
         {
             return "A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,\n\n" +

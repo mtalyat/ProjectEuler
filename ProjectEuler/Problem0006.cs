@@ -8,8 +8,6 @@ namespace ProjectEuler
 {
     internal class Problem0006 : Problem
     {
-        protected override uint Number => 6;
-
         protected override string GetPrompt()
         {
             return "The sum of the squares of the first ten natural numbers is,\n1^2 + 2^2 + ... + 10^2 = 385.\n\n" +

@@ -8,8 +8,6 @@ namespace ProjectEuler
 {
     internal class Problem0007 : Problem
     {
-        protected override uint Number => 7;
-
         protected override string GetPrompt()
         {
             return "By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.\nWhat is the 10 001st prime number ?";

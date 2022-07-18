@@ -8,8 +8,6 @@ namespace ProjectEuler
 {
     internal class Problem0003 : Problem
     {
-        protected override uint Number => 3;
-
         protected override string GetPrompt()
         {
             return "The prime factors of 13195 are 5, 7, 13 and 29.\n\n" +
