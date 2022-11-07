@@ -5,10 +5,8 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Problem problem = new Problem0024();
+        Problem problem = new Problem0025();
 
         problem.DoWork();
-
-
     }
 }
