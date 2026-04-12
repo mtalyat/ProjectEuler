@@ -2,6 +2,8 @@
 ProjectEuler.net #{NUMBER}
 
 {PROBLEM_TEXT}
+
+
 """
 
 def main():
