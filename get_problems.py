@@ -23,6 +23,12 @@ def get_problem_text(number) -> str:
     
     # Remove dollar signs
     text = text.replace('$', '')
+
+    # Replace '\dots' with '...'
+    text = text.replace('\\dots', '...')
+
+    # Trim leading and trailing whitespace
+    text = text.strip()
     
     return text
 
@@ -85,9 +91,9 @@ def load_problem(number):
 
     return True
 
-def load_problems():
+def load_problems(max_number):
     number = 1
-    while True:
+    while number <= max_number:
         path = f'Problems/Problem_{number:05d}.txt'
         if os.path.exists(path):
             print(f'Problem {number} already exists, skipping')
@@ -100,23 +106,23 @@ def load_problems():
         number += 1
 
 def main():
-    language = sys.argv[1] if len(sys.argv) > 1 else None
+    number = int(sys.argv[1]) if len(sys.argv) > 1 else None
+    language = sys.argv[2] if len(sys.argv) > 2 else None
 
     if language is None:
-        load_problems()
+        load_problems(number)
     else:
         template, extension = get_template(language)
         if template is None:
             print(f'No template found for language {language}')
             return
         
-        number = 1
-        while True:
-            if not get_problem(number, language, template, extension):
-                print(f'Finished getting problems. Last problem number: {number - 1}')
-                break
+        if get_problem(number, language, template, extension):
             print(f'Got problem {number} for language {language}')
-            number += 1
+            return
+        else:
+            print(f'Problem {number} does not exist or could not be loaded')
+            return
 
 if __name__=='__main__':
     main()
