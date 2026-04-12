@@ -1,6 +1,5 @@
-In the United Kingdom the currency is made up of pound (£) and pence (p). There are eight coins in general circulation:
-1p, 2p, 5p, 10p, 20p, 50p, £1 (100p), and £2 (200p).
-It is possible to make £2 in the following way:
-1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
-How many different ways can £2 be made using any number of coins?
-
+In the United Kingdom the currency is made up of pound (ï¿½) and pence (p). There are eight coins in general circulation:
+1p, 2p, 5p, 10p, 20p, 50p, ï¿½1 (100p), and ï¿½2 (200p).
+It is possible to make ï¿½2 in the following way:
+1×£1 + 1ï¿½50p + 2ï¿½20p + 1ï¿½5p + 1ï¿½2p + 3ï¿½1p
+How many different ways can ï¿½2 be made using any number of coin

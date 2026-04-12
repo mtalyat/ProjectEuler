@@ -4,4 +4,3 @@ Perhaps less well known are longer chains. For example, starting with 12496, we 
 12496 \to 14288 \to 15472 \to 14536 \to 14264 (\to 12496 \to \cdots)
 Since this chain returns to its starting point, it is called an amicable chain.
 Find the smallest member of the longest amicable chain with no element exceeding one million.
-

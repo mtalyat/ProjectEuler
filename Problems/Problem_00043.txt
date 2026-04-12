@@ -8,4 +8,3 @@ d_6d_7d_8=572 is divisible by 11
 d_7d_8d_9=728 is divisible by 13
 d_8d_9d_{10}=289 is divisible by 17
 Find the sum of all 0 to 9 pandigital numbers with this property.
-

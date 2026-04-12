@@ -2,4 +2,3 @@ By replacing each of the letters in the word CARE with 1, 2, 9, and 6 respective
 Using words.txt (right click and 'Save Link/Target As...'), a 16K text file containing nearly two-thousand common English words, find all the square anagram word pairs (a palindromic word is NOT considered to be an anagram of itself).
 What is the largest square number formed by any member of such a pair?
 NOTE: All anagrams formed must be contained in the given text file.
-
