@@ -1,4 +1,8 @@
-﻿This is the repository for my solutions to Project Euler. 
+﻿# Project Euler Solutions
+
+This is the repository for my solutions to Project Euler. 
+
+Each sub-directory is for a different programming language.
 
 Project Euler's website can be found here: https://projecteuler.net/
 
@@ -9,4 +13,4 @@ However, problems like Problem 3 would take forever to solve by brute forcing th
 to think critically of the problem at hand, and handle it accordingly.
 
 In all honesty, I really enjoy this coding practice. It is quite different from my programming work I do
-for video games, as I have to think about how to solve problems in quite a different way. 
+for video games, as I have to think about how to solve problems in quite a different way.
