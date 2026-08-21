@@ -8,12 +8,14 @@ Evaluate the sum of all the amicable numbers under 10000.
 
 """
 
+from Utility import create_list_divisors
+
 TARGET = 10000
 SIZE = TARGET + 1
 
 def main():
     # Create initial proper divisors of 1 (without n)
-    divisors = [[1] for _ in range(SIZE)]
+    divisors = create_list_divisors(SIZE, False)
     # For each n, check for pair if sum of divisirs < n and add to total if there is a pair, then add self to divisors of multiples larger than n
     sums = [0] * SIZE
     sums[1] = 1
@@ -24,8 +26,6 @@ def main():
         if s < n and sums[s] == n:
             result += n
             result += s
-        for m in range(n+n, TARGET, n):
-            divisors[m].append(n)
     print(result)
 
 if __name__=='__main__':

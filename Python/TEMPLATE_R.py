@@ -5,8 +5,11 @@ ProjectEuler.net #{NUMBER}
 
 """
 
+RESOURCE_PATH = '{RESOURCE}'
+
 def main():
-    pass
+    with open(RESOURCE_PATH, 'r') as file:
+        text = file.read()
 
 if __name__=='__main__':
     main()
